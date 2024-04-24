@@ -1,0 +1,57 @@
+{
+  "name": "@local/components-stylex",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "publishConfig": {
+    "exports": {
+      "types": "dist/src/index.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "bun install && bunx --bun vite",
+    "watch": "bun run build --watch",
+    "build": "bunx --bun vite build",
+    "build:dev": "bunx --bun vite build --mode development",
+    "lint": "bunx --bun eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "bunx --bun vite preview",
+    "test": "bunx --bun vitest"
+  },
+  "dependencies": {
+    "@ark-ui/react": "^2.2.3",
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@stylexjs/stylex": "^0.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@stylexjs/rollup-plugin": "^0.6.0",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^15.0.1",
+    "@types/bun": "^1.1.0",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vanilla-extract/css": "^1.14.2",
+    "@vanilla-extract/vite-plugin": "^4.0.7",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "chokidar-cli": "^3.0.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "jsdom": "^24.0.0",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.0",
+    "vite-plugin-dts": "^3.8.1",
+    "vitest": "^1.5.0"
+  }
+}

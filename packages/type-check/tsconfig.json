@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "jsx": "react",
+    "baseUrl": ".",
+    "outDir": "dist",
+
+    "strict": true,
+    "allowJs": true,
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "preserveWatchOutput": true,
+  },
+  "references": [
+    { "path": "../../apps/portal" },
+    { "path": "../components-panda" },
+    { "path":  "../components-stylex" }
+  ],
+  "exclude": ["node_modules"]
+}

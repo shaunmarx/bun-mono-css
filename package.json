@@ -1,0 +1,17 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "bun install && bun run dev",
+    "dev": "bun run --filter '@local/*' watch",
+    "test": "vitest",
+    "test:ci": "vitest run"
+  },
+  "private": true,
+  "devDependencies": {
+    "vitest": "^1.5.0"
+  },
+  "workspaces": ["packages/*", "apps/*"]
+}

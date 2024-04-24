@@ -1,0 +1,13 @@
+{
+    "name": "@octopusdeploy/type-check",
+    "description": "A type check specific project which we can run to type check across the entire monorepo.",
+    "version": "1.0.0",
+    "scripts": {
+        "type:check": "tsc -b",
+        "watch": "tsc -b --watch"
+    },
+    "dependencies": {
+        "@local/portal": "workspace:^",
+        "typescript": "^5.4.5"
+    }
+}

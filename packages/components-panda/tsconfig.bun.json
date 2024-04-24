@@ -1,0 +1,20 @@
+
+{
+  "compilerOptions": {
+    "composite": true,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "target": "ESNext",
+    "types": ["@types/bun",  "vitest", "@testing-library/jest-dom"]
+  },
+  "include": [
+    "vite.config.ts", "vitest-setup.ts",
+    "src/**/*.spec.{tsx, ts}",
+    "src/**/*.preset.ts",
+    "src/**/*.recipe.ts",
+    "src/preset.ts", "watch.ts"
+  ],
+}
